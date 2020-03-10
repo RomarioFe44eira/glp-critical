@@ -12,10 +12,23 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { LayoutModule } from '@angular/cdk/layout';
 
+import {ChartsModule} from 'ng2-charts';
+import { MyBarChartComponent } from './my-bar-chart/my-bar-chart.component';
+import { MyDoughnutChartComponent } from './my-doughnut-chart/my-doughnut-chart.component';
+import { MyRadarChartComponent } from './my-radar-chart/my-radar-chart.component';
+import { MyPieChartComponent } from './my-pie-chart/my-pie-chart.component';
+import { Material } from './material';
+import { AlertInformationComponent } from './alert-information/alert-information.component';
+
 @NgModule({
   declarations: [
     AppComponent,
-    DashComponent
+    DashComponent,
+    MyBarChartComponent,
+    MyDoughnutChartComponent,
+    MyRadarChartComponent,
+    MyPieChartComponent,
+    AlertInformationComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +39,9 @@ import { LayoutModule } from '@angular/cdk/layout';
     MatMenuModule,
     MatIconModule,
     MatButtonModule,
-    LayoutModule
+    LayoutModule,
+    ChartsModule, 
+    Material
   ],
   providers: [],
   bootstrap: [AppComponent]
